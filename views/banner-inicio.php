@@ -10,6 +10,9 @@
             <h2 class="title wow fadeInUp" data-wow-delay="900ms">Ingeniería, Logística y Comercialización</h2>
             <div class="text wow fadeInUp" data-wow-delay="1200ms" style="font-size: 20px;">Soluciones integrales de importación, exportación, refrigeración industrial y
                 servicios de ingeniería con altos estándares de calidad internacionales.</div>
+            <div class="btn-box wow fadeInUp" data-wow-delay="1600ms">
+                <a href="page-about.html" class="theme-btn btn-style-one hover-light"><span class="btn-title">Contáctanos <i class="fa fa-phone"></i></span></a>
+            </div>
         </div>
     </div>
 </section>
