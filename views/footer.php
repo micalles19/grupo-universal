@@ -9,7 +9,11 @@
 					<div class="footer-column col-xl-3 col-lg-12 col-md-12">
 						<div class="footer-widget about-widget">
 							<div class="widget-content">
-								<div class="logo"><a href="#"> <img src="assets/images/menu/<?php echo $logo?>" alt=""></a></div>
+                                <?php if ($page =="proinsa"){?>
+								<div class="logo"><a href="#"> <img src="assets/images/menu/<?php echo $logo?>" style="height: 200px;" alt=""></a></div>
+                                <?php }else{?>
+                                    <div class="logo"><a href="#"> <img src="assets/images/menu/<?php echo $logo?>" alt=""></a></div>
+                                <?php }?>
                             </div>
 						</div>
 					</div>
@@ -68,7 +72,9 @@
 <script src="assets/js/mixitup.js"></script>
 <script src="assets/js/owl.js"></script>
 <script src="assets/js/script.js"></script>
+
 <script type="text/javascript">
+
     (function () {
         var options = {
             whatsapp: "+50375397024", // WhatsApp number
@@ -82,8 +88,23 @@
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 
-</script>
 
+// function googleTranslateElementInit()
+// {
+//     new google.translate.TranslateElement({
+//         pageLanguage: 'es',
+//         includedLanguages: 'en,es,fr,it,pt,zh-CN'
+//     }, 'google_translate_element');
+// }
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es',
+                includedLanguages: 'en,es,fr,it,pt,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+<!--<script type="text/javaScript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
 </body>
 </html>
 

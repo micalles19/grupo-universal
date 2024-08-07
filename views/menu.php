@@ -5,10 +5,12 @@
         <div class="header-top">
             <div class="inner-container">
                 <div class="top-left">
+                    <?php if (!empty($direccion)){ ?>
                     <!-- Info List -->
                     <ul class="list-style-one">
-                        <li><i class="fa fa-map-marker-alt"></i> <?php echo $direccion ?></li>
+                        <li><a href="<?php echo $maps ?>" target="_blank"> <i class="fa fa-map-marker-alt"></i> <?php echo $direccion ?></a></li>
                     </ul>
+                    <?php } ?>
                 </div>
 
                 <div class="top-right">
@@ -24,7 +26,11 @@
             <!-- Main box -->
             <div class="main-box">
                 <div class="logo-box">
-                    <div class="logo"><a href="?page=inicio"><img style="width: 200px;" src="assets/images/menu/<?php echo $logo?>" alt="" title="Grupo Universal"></a></div>
+                    <?php if ($page =="proinsa"){?>
+                    <div class="logo"><a href="?page=inicio"><img style="height: 115px!important;" src="assets/images/menu/<?php echo $logo?>" alt="" title="Grupo Universal"></a></div>
+                    <?php }else{?>
+                        <div class="logo"><a href="?page=inicio"><img style="width: 200px;" src="assets/images/menu/<?php echo $logo?>" alt="" title="Grupo Universal"></a></div>
+                        <?php }?>
                 </div>
 
                 <!--Nav Box-->
@@ -35,8 +41,11 @@
                             <li class="<?php echo $universal ?>"><a href="?page=universal-cooling">Universal Cooling</a> </li>
                             <li class="<?php echo $gdi ?>"><a href="?page=gdi">GDI</a> </li>
                             <li class="<?php echo $proinsa ?>"><a href="?page=proinsa">PROINSA</a> </li>
-                            <li><a href="?page=contactanos">Contactanos</a></li>
-                            <li><a href="?page=proyectos">Proyectos</a></li>
+                            <li> <div id="google_translate_element"></div>
+
+                            </li>
+<!--                            <li><a href="?page=contactanos">Contactanos</a></li>-->
+<!--                            <li><a href="?page=proyectos">Proyectos</a></li>-->
                         </ul>
                     </nav>
                     <!-- Main Menu End-->
@@ -51,11 +60,6 @@
                         <!-- Mobile Nav toggler -->
                         <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
                     </div>
-                </div>
-
-                <div class="btn-box">
-                    <!-- Theme btn -->
-                    <a href="page-contact.html" class="theme-btn btn-style-one"><span class="btn-title">Get a quote <i class="fa fa-arrow-right"></i></span></a>
                 </div>
             </div>
         </div>

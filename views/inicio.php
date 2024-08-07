@@ -18,24 +18,18 @@
 
                     <div class="info-block">
                         <div class="inner">
-                            <div class="icon-box"><i class="icon flaticon-puzzle"></i></div>
-                            <div class="text">Nos caracterizamos por brindarte el mejor servicio con calidad y calidez, gracias a nuestra mejora continua y personal altamente cualificado.</div>
+                            <div class="icon-box"><i class="icon flaticon-puzzle"></i> </div>
+                            <div class="text" style="margin-top: -25px; !important;"><span style="font-size: 18px;">Mejora continua</span> <br> Nos caracterizamos por brindarte el mejor servicio con calidad y calidez, gracias a nuestro personal altamente cualificado.</div>
                         </div>
                     </div>
                     <div class="info-block">
                         <div class="inner">
                             <div class="icon-box"><i class="icon flaticon-production"></i></div>
-                            <div class="text">Podemos conectarte con todo el mundo gracias a nuestros socios estratégicos que se encuentran a tu disposición.</div>
+                            <div class="text" style="margin-top: -20px; !important;"><span style="font-size: 18px;">Socios Estratégicos</span> <br>Podemos conectarte con todo el mundo gracias a nuestra red de socios que se encuentran a tu disposición.</div>
                         </div>
                     </div>
 
-                    <div class="btn-box">
-<!--                        <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Discover More<i class="fa fa-arrow-right"></i></span></a>-->
-                        <a href="https://www.youtube.com/embed/0J9aCUzqcPM?feature=oembed?playlist=0J9aCUzqcPM&mute=0&autoplay=0&loop=no&controls=0&start=0&end=" class="play-btn" data-caption="" data-fancybox="">
-                            <i class="icon fa fa-play" aria-hidden="true"></i>
-                            <span class="title">Conce nuestra Planta</span>
-                        </a>
-                    </div>
+
                 </div>
             </div>
 
@@ -111,64 +105,129 @@
             <h2>Nuestros Valores</h2>
         </div>
         <div class="row">
-            <!-- service-block Seven-->
-            <div class="service-block-seven col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                <div class="inner-box">
-                    <div class="content">
-                        <div class="icon-box"><i class="icon flaticon-user"></i></div>
-                        <h4 class="title"><a href="#">Trabajo en equipo</a></h4>
-                        <div class="text">Trabajamos coordinadamente para alcanzar objetivos comunes, apoyándonos unos con otros.</div>
-                    </div>
-                </div>
-            </div>
-            <!-- service-block Seven-->
-            <div class="service-block-seven col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
-                <div class="inner-box">
-                    <div class="content">
-                        <div class="icon-box"><i class="icon flaticon-smartphone-3"></i></div>
-                        <h4 class="title"><a href="#">INNOVACION</a></h4>
-                        <div class="text">Estimulamos el desarrollo de nuevas técnicas, promoviendo la mejora continua.</div>
-                    </div>
-                </div>
-            </div>
-            <!-- service-block Seven-->
-            <div class="service-block-seven col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-                <div class="inner-box">
-                    <div class="content">
-                        <div class="icon-box"><i class="icon flaticon-creativity"></i></div>
-                        <h4 class="title"><a href="#">CREATIVIDAD</a></h4>
-                        <div class="text">Generamos y diseñamos ideas al máximo para crear algo nuevo y exclusivo</div>
-                    </div>
-                </div>
-            </div>
-            <!-- service-block Seven-->
-            <div class="service-block-seven col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                <div class="inner-box">
-                    <div class="content">
-                        <div class="icon-box"><i class="icon flaticon-diamond-2"></i></div>
-                        <h4 class="title"><a href="#">TRANSPARENCIA</a></h4>
-                        <div class="text">Establecemos una vía de comunicación honesta dentro y fuera de la organización.</div>
-                    </div>
-                </div>
-            </div>
-            <!-- service-block Seven-->
-            <div class="service-block-seven col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
-                <div class="inner-box">
-                    <div class="content">
-                        <div class="icon-box"><i class="icon flaticon-shield"></i></div>
-                        <h4 class="title"><a href="#">INTEGRIDAD</a></h4>
-                        <div class="text">Practicamos altos valores morales lo que genera seguridad y confianza en nuestro cliente y la organización.</div>
-                    </div>
-                </div>
-            </div>
+            <style>
+                .value-block {
+                    display: inline-block;
+                    text-align: center;
+                    margin: 20px;
+                    position: relative;
+                }
 
-            <!-- service-block Seven-->
-            <div class="service-block-seven col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-                <div class="inner-box">
-                    <div class="content">
-                        <div class="icon-box"><i class="icon flaticon-design-tool"></i></div>
-                        <h4 class="title"><a href="#">DISCIPLINA</a></h4>
-                        <div class="text">Cumplimos con nuestros objetivos y responsabilidades de manera efectiva, gracias a nuestras rutinas organizativa.</div>
+                .value-block .inner-content {
+                    padding: 20px;
+                    cursor: pointer;
+                }
+
+                .value-block .icon {
+                    font-size: 50px;
+                    color: #007bff;
+                }
+
+                .value-block p {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    color: #333;
+                }
+
+                .tooltip-container {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    padding: 10px;
+                    width: 250px;
+                    z-index: 100;
+                }
+
+                .tooltip-container::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-width: 0 10px 10px;
+                    border-style: solid;
+                    border-color: transparent transparent #ddd;
+                }
+
+                .value-block:hover .tooltip-container {
+                    display: block;
+                }
+
+                .tooltip-container p {
+                    margin: 5px 0;
+                    padding: 0;
+                    line-height: 1.4;
+                }
+            </style>
+            <div class="col-md-2">
+                <div class="value-block">
+                    <div class="inner-content">
+                        <div class="icon"><i class="icon flaticon-user "></i></div>
+                        <p style="font-size: 18px!important;">TRABAJO EN EQUIPO</p>
+                        <div class="tooltip-container">
+                            <p>Colaboramos estrechamente integrando nuestras habilidades y conocimientos para lograr objetivos compartidos, fomentando una comunicación abierta y un ambiente de apoyo mutuo que potencia nuestras fortalezas individuales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="value-block">
+                    <div class="inner-content">
+                        <div class="icon"><i class="icon flaticon-smartphone-3"></i></div>
+                        <p style="font-size: 18px!important;">INNOVACION</p>
+                        <div class="tooltip-container">
+                            <p>Fomentamos el desarrollo de soluciones vanguardistas y la implementación de nuevas tecnologías, promoviendo una cultura de mejora continua y creatividad para mantenernos a la vanguardia en nuestro sector.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="value-block">
+                    <div class="inner-content">
+                        <div class="icon"><i class="icon flaticon-creativity"></i></div>
+                        <p style="font-size: 18px!important;">CREATIVIDAD</p>
+                        <div class="tooltip-container">
+                            <p>Desarrollamos y diseñamos ideas innovadoras, maximizando nuestra imaginación para crear productos y soluciones exclusivas que destacan en el mercado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="value-block">
+                    <div class="inner-content">
+                        <div class="icon"><i class="icon flaticon-diamond-2"></i></div>
+                        <p style="font-size: 18px!important;">TRANSPARENCIA</p>
+                        <div class="tooltip-container">
+                            <p>Fomentamos una comunicación abierta y honesta tanto internamente como con nuestros clientes y socios, asegurando la claridad y confianza en todas nuestras interacciones y procesos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="value-block">
+                    <div class="inner-content">
+                        <div class="icon"><i class="icon flaticon-shield"></i></div>
+                        <p style="font-size: 18px!important;">INTEGRIDAD</p>
+                        <div class="tooltip-container">
+                            <p>Adherimos a altos estándares morales en todas nuestras acciones, generando seguridad y confianza tanto en nuestros clientes como en nuestra organización.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="value-block">
+                    <div class="inner-content">
+                        <div class="icon"><i class="icon flaticon-design-tool"></i></div>
+                        <p style="font-size: 18px!important;">DISCIPLINA</p>
+                        <div class="tooltip-container">
+                            <p>Cumplimos nuestros objetivos y responsabilidades de manera efectiva a través de rutinas organizadas y un enfoque constante en la excelencia operativa.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,6 +255,7 @@
                             <li class="filter clink" data-role="button" data-filter=".cooling">Universal Cooling</li>
                             <li class="filter clink" data-role="button" data-filter=".gdi">GDI</li>
                             <li class="filter clink" data-role="button" data-filter=".proinsa">Proinsa</li>
+                            <li class="filter clink" data-role="button" onclick="verProyectos()">Más proyectos </li>
                         </ul>
                     </div>
                 </div>
@@ -389,6 +449,11 @@
     </div>
 </section>
 
+<script>
+    function verProyectos(){
+        location.href ="?page=proyectos";
+    }
+</script>
 
 <!-- News Section -->
 

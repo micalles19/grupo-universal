@@ -37,7 +37,15 @@
                         <div class="text">Años de<br> Experiencia</div>
                     </div>
                 </div>
+                <div class="btn-box">
+                    <!--                        <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Discover More<i class="fa fa-arrow-right"></i></span></a>-->
+                    <a href="https://www.youtube.com/embed/0J9aCUzqcPM?feature=oembed?playlist=0J9aCUzqcPM&mute=0&autoplay=0&loop=no&controls=0&start=0&end=" class="play-btn" data-caption="" data-fancybox="">
+                        <i class="icon fa fa-play" aria-hidden="true"></i>
+                        <span class="title">Conce nuestra Planta</span>
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
 </section>

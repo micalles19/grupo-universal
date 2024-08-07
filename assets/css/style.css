@@ -6528,7 +6528,7 @@ Section Title
 .banner-section {
   position: relative;
   overflow: hidden;
-  min-height: 895px;
+  min-height: 600px!important;
 }
 @media (max-width: 991.98px) {
   .banner-section {
